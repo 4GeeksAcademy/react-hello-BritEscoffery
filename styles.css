@@ -1,0 +1,24 @@
+.traffic-housing {
+  background: black;
+  padding: 20px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+  border-radius: 50%;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.red { background: red; }
+.yellow { background: yellow; }
+.green { background: green; }
+
+.glow {
+  opacity: 1;
+  box-shadow: 0 0 20px 5px currentColor;
+}
