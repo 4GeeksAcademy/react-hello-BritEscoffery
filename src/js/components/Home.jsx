@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import "../../styles/index.css";
 
 //create your first component
 const Home = () => {
@@ -11,11 +11,15 @@ const changeLight = (newColor) => {
 
 return (
 	<div className = "traffic-housing">
-		<div className ={`red ${clickedColor == "red" ? "glow" : ""}`} onClick={() => changeLight("red")} >
+		{/* Glow color: {clickedColor} */}
+		<div className= {`light red ${clickedColor == "red" ? "glow" : ""}`} onClick={() => changeLight("red")} >
+		
 		</div>
-		<div className={`yellow ${clickedColor == "yellow" ? "glow" : ""}`} onClick={()=> changeLight("green")}>
+		<div className={`light yellow ${clickedColor == "yellow" ? "glow" : ""}`} onClick={()=> changeLight("yellow")}>
+		
 		</div>
-		<div className={`green ${clickedColor == "green" ? "glow" : ""}`}>
+		<div className={`light green ${clickedColor == "green" ? "glow" : ""}`} onClick={()=> changeLight("green")}>
+		
 		</div>
 	</div>
 
